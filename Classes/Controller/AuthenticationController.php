@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Flowpack\Neos\FrontendLogin\Controller;
+namespace PSIT\FrontendLogin\Controller;
 
 /*
- * This file is part of the Flowpack.Neos.FrontendLogin package.
+ * This file is part of the PSIT.FrontendLogin package.
  *
  * (c) Contributors of the Flowpack Team - flowpack.org
  *
@@ -33,13 +33,13 @@ class AuthenticationController extends AbstractAuthenticationController
     protected $translator;
 
     /**
-     * @Flow\InjectConfiguration(package="Flowpack.Neos.FrontendLogin", path="translation.packageKey")
+     * @Flow\InjectConfiguration(package="PSIT.FrontendLogin", path="translation.packageKey")
      * @var string
      */
     protected $translationPackageKey;
 
     /**
-     * @Flow\InjectConfiguration(package="Flowpack.Neos.FrontendLogin", path="translation.sourceName")
+     * @Flow\InjectConfiguration(package="PSIT.FrontendLogin", path="translation.sourceName")
      * @var string
      */
     protected $translationSourceName;

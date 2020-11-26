@@ -1,7 +1,7 @@
 ##
 # A simple "Login form" plugin that demonstrates "Frontend authorization"
 #
-'Flowpack.Neos.FrontendLogin:LoginForm':
+'PSIT.FrontendLogin:LoginForm':
   superTypes:
     'Neos.Neos:Plugin': true
   ui:

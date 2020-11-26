@@ -5,28 +5,27 @@ Neos:
         providers:
           'Neos.Neos:Backend':
             requestPatterns:
-              'Flowpack.Neos.FrontendLogin:NeosBackend':
-                pattern: Flowpack\Neos\FrontendLogin\Security\NeosRequestPattern
-          'Flowpack.Neos.FrontendLogin:Frontend':
+              'PSIT.FrontendLogin:NeosBackend':
+                pattern: PSIT\FrontendLogin\Security\NeosRequestPattern
+          'PSIT.FrontendLogin:Frontend':
             provider: PersistedUsernamePasswordProvider
             requestPatterns:
-              'Flowpack.Neos.FrontendLogin:NeosFrontend':
-                pattern: Flowpack\Neos\FrontendLogin\Security\NeosRequestPattern
+              'PSIT.FrontendLogin:NeosFrontend':
+                pattern: PSIT\FrontendLogin\Security\NeosRequestPattern
                 patternOptions:
                   matchFrontend: true
   Neos:
     userInterface:
       translation:
         autoInclude:
-          Flowpack.Neos.FrontendLogin:
+          PSIT.FrontendLogin:
             - 'NodeTypes/*'
     fusion:
       autoInclude:
-        Flowpack.Neos.FrontendLogin: true
+        PSIT.FrontendLogin: true
 
-Flowpack:
-  Neos:
-    FrontendLogin:
-      translation:
-        packageKey: 'Flowpack.Neos.FrontendLogin'
-        sourceName: 'Main'
+PSIT:
+  FrontendLogin:
+    translation:
+      packageKey: 'PSIT.FrontendLogin'
+      sourceName: 'Main'

@@ -2,7 +2,7 @@ privilegeTargets:
 
   'Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
 
-    'Flowpack.Neos.FrontendLogin:LoginForm':
+    'PSIT.FrontendLogin:LoginForm':
       matcher: 'method(Neos\Flow\Security\Authentication\Controller\AbstractAuthenticationController->(?!initialize).*Action()) || method(Flowpack\Neos\FrontendLogin\Controller\AuthenticationController->(?!initialize).*Action())'
 
 roles:
@@ -11,8 +11,8 @@ roles:
     privileges:
       -
         # Grant any user access to the FrontendLoginLoginForm plugin
-        privilegeTarget: 'Flowpack.Neos.FrontendLogin:LoginForm'
+        privilegeTarget: 'PSIT.FrontendLogin:LoginForm'
         permission: GRANT
 
-  'Flowpack.Neos.FrontendLogin:User':
+  'PSIT.FrontendLogin:User':
     privileges: []

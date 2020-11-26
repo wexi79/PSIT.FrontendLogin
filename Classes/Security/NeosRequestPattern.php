@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Flowpack\Neos\FrontendLogin\Security;
+namespace PSIT\FrontendLogin\Security;
 
 /*
- * This file is part of the Flowpack.Neos.FrontendLogin package.
+ * This file is part of the PSIT.FrontendLogin package.
  *
  * (c) Contributors of the Flowpack Team - flowpack.org
  *
